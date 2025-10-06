@@ -1,11 +1,22 @@
-### Hi 👋 My name is Andrey Gricenko
+## Hi 👋 My name is Andrey Gritsenko
 
 ## 🛠 Skills
-C#, Java, Javascript, Unity, Unreal Engine, ShaderLab
+### Languages | C#, Java, SQL
+### Frameworks & Platforms | Unity (2020–2023 LTS, 6), .NET, ASP.NET Core
+### Game & Application Architecture | OOP, SOLID, KISS, YAGNI, DRY, Design Patterns, ECS (Unity DOTS, Morpeh, Entities), MVC, MVP, Clean Architecture, Modular Architecture
+### Performance & Optimization | Cross-platform development (iOS, Android, PC, Web)
+### CPU/GPU profiling (Unity Profiler, RenderDoc), memory management, ANR & crash mitigation
+### Graphics & Shaders | URP, Shader Graph, HLSL
+### Development Tools & Libraries | Dependency Injection (Zenject, VContainer), Addressables, UniTask, UniRx, DOTween, Unity Job System, Burst Compiler, UI Toolkit, Odin Inspector
+### Backend & Cloud Services | PlayFab Cloud Script, Azure Functions, Docker, PostgreSQL
+### Monetization & Analytics SDKs | IAP (Google Play, Apple App Store), Firebase, Google Mobile Ads, IronSource, AppLovin, Facebook SDK, GameAnalytics, AppMetrica, AppsFlyer, Play Asset Delivery
+### Build, CI/CD & DevOps | Android Studio, Xcode, Gradle, AndroidManifest, Jenkins, Git, Git LFS
+### IDEs & Collaboration | Rider, Jira, Confluence
+### Soft & Team Skills | Mentoring, Code Reviews, Technical Documentation, Agile/Scrum
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://docs.google.com/document/d/1eIITpu6XlzB93Us3nK48yPL7bNRlkczcQ5XVvBLWB_Y/edit?usp=sharing)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andrey-gritsenko-8bb2751a5/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://docs.google.com/document/d/18pMfXGwOygeYL8BeMJbkCDpeBOwaixsXyEiFI3M3DYg/edit?usp=sharing)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/andrey-gritsenko/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gritsenkoandrey)
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/fargo1987)
 
