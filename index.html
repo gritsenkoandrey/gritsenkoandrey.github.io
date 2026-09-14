@@ -17,12 +17,12 @@
 
 <header class="site-header" id="top">
   <div class="wrap header-inner">
-    <a class="brand" href="#top">AG<span class="dot">.</span></a>
     <nav class="nav" id="nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#play">Play</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -326,6 +326,30 @@
     </div>
   </section>
 
+  <section class="section" id="play">
+    <div class="wrap">
+      <p class="eyebrow reveal">🎮 A quick break</p>
+      <h2 class="section-title reveal">I Build Games — Here's One</h2>
+      <p class="section-sub reveal">A tiny Pong, made with plain Canvas &amp; JS, no engine, no dependencies. Move your mouse or finger over the board — first to 7 wins.</p>
+
+      <div class="game-wrap reveal">
+        <div class="game-hud">
+          <span class="game-score" id="scorePlayer">0</span>
+          <span class="game-hud-sep">:</span>
+          <span class="game-score" id="scoreAi">0</span>
+        </div>
+        <div class="game-canvas-wrap">
+          <canvas id="pong" width="640" height="360" aria-label="Pong game — move your mouse or finger to control the left paddle"></canvas>
+          <button class="btn btn-primary game-start-btn" id="pongStart" type="button">▶ Start Game</button>
+        </div>
+        <div class="game-controls">
+          <p class="game-hint">Mouse / touch to move · Arrow keys also work</p>
+          <button class="btn btn-ghost" id="pongRestart" type="button">Restart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section section-alt" id="education">
     <div class="wrap">
       <h2 class="section-title reveal">Education &amp; Courses</h2>
@@ -378,5 +402,6 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/pong.js"></script>
 </body>
 </html>

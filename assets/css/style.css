@@ -155,8 +155,12 @@ img { max-width: 100%; }
   display: inline-block;
   padding: 12px 24px;
   border-radius: 999px;
+  font-family: inherit;
   font-weight: 600;
   font-size: 0.95rem;
+  background: none;
+  border: none;
+  cursor: pointer;
   transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
 }
 .btn:hover { text-decoration: none; transform: translateY(-2px); }
@@ -169,6 +173,7 @@ img { max-width: 100%; }
 .btn-ghost {
   color: var(--text);
   border: 1px solid var(--border);
+  background: var(--surface);
 }
 .btn-ghost:hover { border-color: var(--accent); }
 
@@ -382,6 +387,93 @@ img { max-width: 100%; }
 }
 .more-projects a {
   font-weight: 600;
+}
+
+/* ---------- Play (Pong) ---------- */
+
+.game-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.game-hud {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.game-score {
+  font-size: 2rem;
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  min-width: 1.4ch;
+  text-align: center;
+}
+
+.game-hud-sep {
+  color: var(--text-dimmer);
+  font-size: 1.4rem;
+}
+
+.game-canvas-wrap {
+  position: relative;
+}
+
+#pong {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 640 / 360;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  touch-action: none;
+  cursor: pointer;
+}
+#pong.is-playing {
+  cursor: none;
+}
+
+.game-start-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.game-start-btn:hover {
+  transform: translate(-50%, calc(-50% - 2px));
+}
+.game-start-btn[hidden] { display: none; }
+
+.game-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.game-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-dimmer);
+}
+
+.game-controls .btn {
+  padding: 9px 20px;
+  font-size: 0.85rem;
 }
 
 /* ---------- Education ---------- */
