@@ -8,7 +8,7 @@
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Press+Start+2P&family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -18,14 +18,19 @@
 <header class="site-header" id="top">
   <div class="wrap header-inner">
     <nav class="nav" id="nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#play">Play</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#experience" data-i18n="nav.experience">Experience</a>
+      <a href="#games" data-i18n="nav.games">Games</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#play" data-i18n="nav.play">Play</a>
+      <a href="#education" data-i18n="nav.education">Education</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button class="lang-btn" data-lang="en" type="button">EN</button>
+      <button class="lang-btn" data-lang="ru" type="button">RU</button>
+    </div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
@@ -36,34 +41,35 @@
 
   <section class="hero" id="about">
     <div class="wrap hero-inner">
-      <p class="eyebrow reveal">Senior Unity Developer</p>
-      <h1 class="reveal">Hi, I'm Andrey Gritsenko<span class="accent">.</span></h1>
-      <p class="hero-lead reveal">
+      <p class="eyebrow reveal" data-i18n="hero.eyebrow">Senior Unity Developer</p>
+      <h1 class="reveal"><span data-i18n="hero.title">Hi, I'm Andrey Gritsenko</span><span class="accent">.</span></h1>
+      <p class="hero-lead reveal" data-i18n="hero.lead">
         5+ years of commercial mobile game development and 10+ years building high‑load IT systems.
         I design gameplay mechanics, architecture, analytics &amp; monetization services, and UI/UX
         for hit mobile games played by hundreds of millions of people.
       </p>
       <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="#projects">View Projects</a>
-        <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+        <a class="btn btn-primary" href="#projects" data-i18n="hero.cta.projects">View Projects</a>
+        <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta.contact">Get in Touch</a>
+        <a class="btn btn-ghost" id="resumeLink" href="assets/andrey-gritsenko-resume-en.pdf" download="Andrey Gritsenko Senior Unity Developer (ENG).pdf" data-i18n="hero.cta.resume">↓ Download CV</a>
       </div>
 
       <div class="stats reveal">
         <div class="stat">
           <span class="stat-num">366M+</span>
-          <span class="stat-label">combined installs across shipped titles</span>
+          <span class="stat-label" data-i18n="hero.stat1">combined installs across shipped titles</span>
         </div>
         <div class="stat">
           <span class="stat-num">$500K</span>
-          <span class="stat-label">IAP revenue in 30 days post‑launch (Zombie Apocalypse)</span>
+          <span class="stat-label" data-i18n="hero.stat2">IAP revenue in 30 days post‑launch (Zombie Apocalypse)</span>
         </div>
         <div class="stat">
           <span class="stat-num">🏆 1st</span>
-          <span class="stat-label">place in 3 categories — Game Jam 2025, 200 teams</span>
+          <span class="stat-label" data-i18n="hero.stat3">place in 3 categories — Game Jam 2025, 200 teams</span>
         </div>
         <div class="stat">
           <span class="stat-num">10+</span>
-          <span class="stat-label">years building production &amp; high‑load systems</span>
+          <span class="stat-label" data-i18n="hero.stat4">years building production &amp; high‑load systems</span>
         </div>
       </div>
     </div>
@@ -71,12 +77,12 @@
 
   <section class="section" id="skills">
     <div class="wrap">
-      <h2 class="section-title reveal">Skills</h2>
-      <p class="section-sub reveal">The stack I ship production games with.</p>
+      <h2 class="section-title reveal" data-i18n="skills.title">Skills</h2>
+      <p class="section-sub reveal" data-i18n="skills.sub">The stack I ship production games with.</p>
 
       <div class="skills-grid reveal">
         <div class="skill-card">
-          <h3>Languages &amp; Platforms</h3>
+          <h3 data-i18n="skills.card1">Languages &amp; Platforms</h3>
           <div class="tags">
             <span class="tag">C#</span><span class="tag">Java</span><span class="tag">Rust</span>
             <span class="tag">Python</span><span class="tag">SQL</span>
@@ -85,7 +91,7 @@
         </div>
 
         <div class="skill-card">
-          <h3>Architecture &amp; Patterns</h3>
+          <h3 data-i18n="skills.card2">Architecture &amp; Patterns</h3>
           <div class="tags">
             <span class="tag">SOLID</span><span class="tag">KISS</span><span class="tag">YAGNI</span><span class="tag">DRY</span>
             <span class="tag">ECS</span><span class="tag">MVC / MVP / MVVM</span><span class="tag">Clean Architecture</span>
@@ -95,7 +101,7 @@
         </div>
 
         <div class="skill-card">
-          <h3>Dev Tools &amp; Libraries</h3>
+          <h3 data-i18n="skills.card3">Dev Tools &amp; Libraries</h3>
           <div class="tags">
             <span class="tag">Zenject</span><span class="tag">VContainer</span><span class="tag">Addressables</span>
             <span class="tag">UniTask</span><span class="tag">UniRx</span><span class="tag">DOTween</span>
@@ -106,7 +112,7 @@
         </div>
 
         <div class="skill-card">
-          <h3>AI &amp; Automation</h3>
+          <h3 data-i18n="skills.card4">AI &amp; Automation</h3>
           <div class="tags">
             <span class="tag">Claude Code</span><span class="tag">Cursor</span><span class="tag">MCP · Unity MCP + CLI</span>
             <span class="tag">AI‑assisted workflows</span><span class="tag">Procedural generation</span>
@@ -115,7 +121,7 @@
         </div>
 
         <div class="skill-card">
-          <h3>Performance &amp; Graphics</h3>
+          <h3 data-i18n="skills.card5">Performance &amp; Graphics</h3>
           <div class="tags">
             <span class="tag">Cross‑platform: iOS/Android/PC/Web</span>
             <span class="tag">Unity Profiler</span><span class="tag">RenderDoc</span><span class="tag">Memory mgmt</span>
@@ -125,7 +131,7 @@
         </div>
 
         <div class="skill-card">
-          <h3>Monetization &amp; Analytics</h3>
+          <h3 data-i18n="skills.card6">Monetization &amp; Analytics</h3>
           <div class="tags">
             <span class="tag">IAP: Google Play / App Store</span><span class="tag">Firebase</span>
             <span class="tag">Google Mobile Ads</span><span class="tag">IronSource</span><span class="tag">AppLovin</span>
@@ -135,7 +141,7 @@
         </div>
 
         <div class="skill-card">
-          <h3>Backend, CI/CD &amp; DevOps</h3>
+          <h3 data-i18n="skills.card7">Backend, CI/CD &amp; DevOps</h3>
           <div class="tags">
             <span class="tag">PlayFab CBS</span><span class="tag">Azure Functions</span><span class="tag">REST API</span>
             <span class="tag">Docker</span><span class="tag">PostgreSQL</span>
@@ -145,7 +151,7 @@
         </div>
 
         <div class="skill-card">
-          <h3>Collaboration</h3>
+          <h3 data-i18n="skills.card8">Collaboration</h3>
           <div class="tags">
             <span class="tag">Rider</span><span class="tag">Jira</span><span class="tag">Confluence</span>
             <span class="tag">Mentoring</span><span class="tag">Code Reviews</span>
@@ -158,8 +164,8 @@
 
   <section class="section section-alt" id="experience">
     <div class="wrap">
-      <h2 class="section-title reveal">Experience</h2>
-      <p class="section-sub reveal">Where the numbers above came from.</p>
+      <h2 class="section-title reveal" data-i18n="exp.title">Experience</h2>
+      <p class="section-sub reveal" data-i18n="exp.sub">Where the numbers above came from.</p>
 
       <div class="timeline">
 
@@ -167,21 +173,21 @@
           <div class="tl-marker"></div>
           <div class="tl-card">
             <div class="tl-head">
-              <h3>Senior Unity C# Developer</h3>
-              <span class="tl-date">Apr 2021 — Present</span>
+              <h3 data-i18n="role1.title">Senior Unity C# Developer</h3>
+              <span class="tl-date" data-i18n="role1.date">Apr 2021 — Present</span>
             </div>
-            <p class="tl-company">Freeplay LLC (AIBY Group) — international game studio, 2B+ downloads worldwide, ~500 employees, top‑10 mobile publisher</p>
+            <p class="tl-company" data-i18n="role1.company">Freeplay LLC (AIBY Group) — international game studio, 2B+ downloads worldwide, ~500 employees, top‑10 mobile publisher</p>
             <ul>
-              <li>Built gameplay mechanics, architecture, analytics &amp; monetization services and UI/UX for hit titles totaling <strong>366M installs</strong>, including Fidget Toys Trading (210M), Snake Run Race (120M) and Zombie Apocalypse (25M) — the latter reaching <strong>$500K revenue in its first 30 days</strong> from IAP.</li>
-              <li>Designed ECS‑based architecture (Entities, Morpeh, DOTS) combined with MV‑patterns (MVC/MVP/MVVM) to improve scalability and stability under growing load; used Job System + Burst for compute, Addressables for load times, and Zenject/VContainer for DI.</li>
-              <li>Built a 7‑stage procedural level generator (Python) for a puzzle title, giving design an unlimited, tunable stream of levels — content production sped up 10×.</li>
-              <li>Implemented scalable game AI (FSM, Behaviour Tree, Utility AI) across multiple systems, improving realism while keeping behaviour logic easy to extend.</li>
-              <li>Built custom Unity editor tooling (IMGUI + UI Toolkit) so artists and designers could author content independently — content creation 2× faster.</li>
-              <li>Contributed to an internal analytics/ads SDK standardizing GameAnalytics, AppMetrica, AppsFlyer, Firebase, IronSource, AppLovin, Appodeal and Facebook SDK integration — new‑project bootstrap time cut by 50%.</li>
-              <li>Wrote and profiled custom HLSL/Shader Graph shaders; used Unity Profiler, Frame Debugger and RenderDoc to cut overdraw and draw calls, reducing frame time without losing visual quality.</li>
-              <li>Shipped a GDPR‑compliant CMP consent form that became a company‑wide standard across all game products.</li>
-              <li>Designed a cloud backend for social features (leaderboards, clans, chat, saves, auth) on PlayFab CBS, Azure Functions and .NET — became a corporate standard and lifted retention by 25%.</li>
-              <li>Built a Figma batch‑export tool (Unity Editor tool + local Figma plugin via Plugin API) that renders every level in one pass and lays screenshots out on a canvas with difficulty/time labels — doubling as a smoke test that catches broken configs before they reach a build.</li>
+              <li data-i18n="role1.bullet1">Built gameplay mechanics, architecture, analytics &amp; monetization services and UI/UX for hit titles totaling <strong>366M installs</strong>, including Fidget Toys Trading (210M), Snake Run Race (120M) and Zombie Apocalypse (25M) — the latter reaching <strong>$500K revenue in its first 30 days</strong> from IAP.</li>
+              <li data-i18n="role1.bullet2">Designed ECS‑based architecture (Entities, Morpeh, DOTS) combined with MV‑patterns (MVC/MVP/MVVM) to improve scalability and stability under growing load; used Job System + Burst for compute, Addressables for load times, and Zenject/VContainer for DI.</li>
+              <li data-i18n="role1.bullet3">Built a 7‑stage procedural level generator (Python) for a puzzle title, giving design an unlimited, tunable stream of levels — content production sped up 10×.</li>
+              <li data-i18n="role1.bullet4">Implemented scalable game AI (FSM, Behaviour Tree, Utility AI) across multiple systems, improving realism while keeping behaviour logic easy to extend.</li>
+              <li data-i18n="role1.bullet5">Built custom Unity editor tooling (IMGUI + UI Toolkit) so artists and designers could author content independently — content creation 2× faster.</li>
+              <li data-i18n="role1.bullet6">Contributed to an internal analytics/ads SDK standardizing GameAnalytics, AppMetrica, AppsFlyer, Firebase, IronSource, AppLovin, Appodeal and Facebook SDK integration — new‑project bootstrap time cut by 50%.</li>
+              <li data-i18n="role1.bullet7">Wrote and profiled custom HLSL/Shader Graph shaders; used Unity Profiler, Frame Debugger and RenderDoc to cut overdraw and draw calls, reducing frame time without losing visual quality.</li>
+              <li data-i18n="role1.bullet8">Shipped a GDPR‑compliant CMP consent form that became a company‑wide standard across all game products.</li>
+              <li data-i18n="role1.bullet9">Designed a cloud backend for social features (leaderboards, clans, chat, saves, auth) on PlayFab CBS, Azure Functions and .NET — became a corporate standard and lifted retention by 25%.</li>
+              <li data-i18n="role1.bullet10">Built a Figma batch‑export tool (Unity Editor tool + local Figma plugin via Plugin API) that renders every level in one pass and lays screenshots out on a canvas with difficulty/time labels — doubling as a smoke test that catches broken configs before they reach a build.</li>
             </ul>
           </div>
         </article>
@@ -190,14 +196,14 @@
           <div class="tl-marker"></div>
           <div class="tl-card">
             <div class="tl-head">
-              <h3>Unity C# Developer</h3>
-              <span class="tl-date">Nov 2019 — Jan 2021</span>
+              <h3 data-i18n="role2.title">Unity C# Developer</h3>
+              <span class="tl-date" data-i18n="role2.date">Nov 2019 — Jan 2021</span>
             </div>
-            <p class="tl-company">GeekBrains (VK Group) — Russia's largest online IT‑education platform</p>
+            <p class="tl-company" data-i18n="role2.company">GeekBrains (VK Group) — Russia's largest online IT‑education platform</p>
             <ul>
-              <li>Designed reference architecture templates (MVC, MVP, MVVM, ECS) for student projects — a layered structure, unified code style and a working example per pattern — cutting time‑to‑first‑playable‑build by 25%.</li>
-              <li>Built interactive learning projects for iOS/Android covering UNet multiplayer, URP, DOTween, Addressables, ScriptableObjects and native plugins — each a complete mini‑game with its architecture explained, not an isolated snippet.</li>
-              <li>Mentored 10+ students with weekly code reviews covering SOLID, OOP and Git‑flow on their own projects, several of which became publishable portfolio pieces.</li>
+              <li data-i18n="role2.bullet1">Designed reference architecture templates (MVC, MVP, MVVM, ECS) for student projects — a layered structure, unified code style and a working example per pattern — cutting time‑to‑first‑playable‑build by 25%.</li>
+              <li data-i18n="role2.bullet2">Built interactive learning projects for iOS/Android covering UNet multiplayer, URP, DOTween, Addressables, ScriptableObjects and native plugins — each a complete mini‑game with its architecture explained, not an isolated snippet.</li>
+              <li data-i18n="role2.bullet3">Mentored 10+ students with weekly code reviews covering SOLID, OOP and Git‑flow on their own projects, several of which became publishable portfolio pieces.</li>
             </ul>
           </div>
         </article>
@@ -206,14 +212,14 @@
           <div class="tl-marker"></div>
           <div class="tl-card">
             <div class="tl-head">
-              <h3>Data Analyst</h3>
-              <span class="tl-date">Jul 2010 — Apr 2021</span>
+              <h3 data-i18n="role3.title">Data Analyst</h3>
+              <span class="tl-date" data-i18n="role3.date">Jul 2010 — Apr 2021</span>
             </div>
-            <p class="tl-company">Federal Customs Service — large government agency, high‑load distributed IT infrastructure, ~2000 employees</p>
+            <p class="tl-company" data-i18n="role3.company">Federal Customs Service — large government agency, high‑load distributed IT infrastructure, ~2000 employees</p>
             <ul>
-              <li>Optimized SQL queries and Oracle Database configuration for high‑load departmental services — rewrote heavy queries and rebuilt indexes/execution plans, cutting average response time by 20%.</li>
-              <li>Built an analytics system on CronosPro with Lua scripting logic, rolled out to 8 regional divisions, replacing manual cross‑department data reconciliation.</li>
-              <li>Ensured database resilience via monitoring, replication and backup policy — 99.9% uptime for critical systems with no data loss on recovery.</li>
+              <li data-i18n="role3.bullet1">Optimized SQL queries and Oracle Database configuration for high‑load departmental services — rewrote heavy queries and rebuilt indexes/execution plans, cutting average response time by 20%.</li>
+              <li data-i18n="role3.bullet2">Built an analytics system on CronosPro with Lua scripting logic, rolled out to 8 regional divisions, replacing manual cross‑department data reconciliation.</li>
+              <li data-i18n="role3.bullet3">Ensured database resilience via monitoring, replication and backup policy — 99.9% uptime for critical systems with no data loss on recovery.</li>
             </ul>
           </div>
         </article>
@@ -222,12 +228,12 @@
           <div class="tl-marker"></div>
           <div class="tl-card">
             <div class="tl-head">
-              <h3>Game Jam 2025 🏆</h3>
-              <span class="tl-date">Mar 2025</span>
+              <h3 data-i18n="role4.title">Game Jam 2025 🏆</h3>
+              <span class="tl-date" data-i18n="role4.date">Mar 2025</span>
             </div>
-            <p class="tl-company">Team of 4, competing against 200 teams</p>
+            <p class="tl-company" data-i18n="role4.company">Team of 4, competing against 200 teams</p>
             <ul>
-              <li>Our game won <strong>1st place in 3 categories</strong>, including "Best Game". I worked on game design and mechanics, gameplay logic, shaders and UI/UX.</li>
+              <li data-i18n="role4.bullet1">Our game won <strong>1st place in 3 categories</strong>, including "Best Game". I worked on game design and mechanics, gameplay logic, shaders and UI/UX.</li>
             </ul>
           </div>
         </article>
@@ -236,10 +242,156 @@
     </div>
   </section>
 
-  <section class="section" id="projects">
+  <section class="section" id="games">
     <div class="wrap">
-      <h2 class="section-title reveal">Open‑Source Projects</h2>
-      <p class="section-sub reveal">A selection from my GitHub — architecture, tooling and multiplayer.</p>
+      <h2 class="section-title reveal" data-i18n="games.title">Shipped Games</h2>
+      <p class="section-sub reveal" data-i18n="games.sub">Live titles from my time at Freeplay — ratings and install counts pulled straight from the stores.</p>
+
+      <div class="ship-grid reveal">
+
+        <article class="ship-card">
+          <div class="ship-top">
+            <img class="ship-icon" src="assets/images/games/fidget-toys-trading.png" alt="" width="52" height="52" loading="lazy">
+            <div class="ship-head">
+              <h3>Fidget Toys Trading</h3>
+              <span class="ship-genre" data-i18n="games.card1.genre">Casual · Freeplay LLC</span>
+            </div>
+          </div>
+          <div class="ship-stats">
+            <span class="ship-stat rating">★ 4.5</span>
+            <span class="ship-stat" data-i18n="games.card1.reviews">611K reviews</span>
+            <span class="ship-stat" data-i18n="games.card1.installs">100M+ installs</span>
+          </div>
+          <div class="ship-links">
+            <a class="ship-badge" href="https://play.google.com/store/apps/details?id=com.fidgettrading.game" target="_blank" rel="noopener">▶ Google Play</a>
+          </div>
+        </article>
+
+        <article class="ship-card">
+          <div class="ship-top">
+            <img class="ship-icon" src="assets/images/games/snake-run-race.png" alt="" width="52" height="52" loading="lazy">
+            <div class="ship-head">
+              <h3>Snake Run Race 3D</h3>
+              <span class="ship-genre" data-i18n="games.card2.genre">Runner · Freeplay LLC</span>
+            </div>
+          </div>
+          <div class="ship-stats">
+            <span class="ship-stat rating">★ 4.6</span>
+            <span class="ship-stat" data-i18n="games.card2.reviews">160K reviews</span>
+            <span class="ship-stat" data-i18n="games.card2.installs">50M+ installs</span>
+          </div>
+          <div class="ship-links">
+            <a class="ship-badge" href="https://play.google.com/store/apps/details?id=com.snakeattack.game" target="_blank" rel="noopener">▶ Google Play</a>
+          </div>
+        </article>
+
+        <article class="ship-card">
+          <div class="ship-top">
+            <img class="ship-icon" src="assets/images/games/zombie-apocalypse.png" alt="" width="52" height="52" loading="lazy">
+            <div class="ship-head">
+              <h3>Zombie Apocalypse</h3>
+              <span class="ship-genre" data-i18n="games.card3.genre">Shooter · Freeplay LLC</span>
+            </div>
+          </div>
+          <div class="ship-stats">
+            <span class="ship-stat rating">★ 4.6</span>
+            <span class="ship-stat" data-i18n="games.card3.reviews">817K reviews</span>
+            <span class="ship-stat" data-i18n="games.card3.installs">10M+ installs</span>
+          </div>
+          <div class="ship-links">
+            <a class="ship-badge" href="https://play.google.com/store/apps/details?id=com.RastleksGames.TheShootout" target="_blank" rel="noopener">▶ Google Play</a>
+          </div>
+        </article>
+
+        <article class="ship-card">
+          <div class="ship-top">
+            <img class="ship-icon" src="assets/images/games/hole-puzzle.png" alt="" width="52" height="52" loading="lazy">
+            <div class="ship-head">
+              <h3>Hole Puzzle</h3>
+              <span class="ship-genre" data-i18n="games.card4.genre">Puzzle · Freeplay LLC</span>
+            </div>
+          </div>
+          <div class="ship-stats">
+            <span class="ship-stat rating">★ 4.8</span>
+            <span class="ship-stat" data-i18n="games.card4.reviews">28.5K reviews</span>
+            <span class="ship-stat" data-i18n="games.card4.installs">1M+ installs</span>
+          </div>
+          <div class="ship-links">
+            <a class="ship-badge" href="https://play.google.com/store/apps/details?id=com.hole.puzzle.io.game" target="_blank" rel="noopener">▶ Google Play</a>
+            <a class="ship-badge" href="https://apps.apple.com/us/app/hole-puzzle-collect-em-all/id6741800156" target="_blank" rel="noopener">🍎 App Store</a>
+          </div>
+        </article>
+
+        <article class="ship-card">
+          <div class="ship-top">
+            <img class="ship-icon" src="assets/images/games/idle-cutter.png" alt="" width="52" height="52" loading="lazy">
+            <div class="ship-head">
+              <h3>Idle Cutter: Wood Slice</h3>
+              <span class="ship-genre" data-i18n="games.card5.genre">Idle · Freeplay LLC</span>
+            </div>
+          </div>
+          <div class="ship-stats">
+            <span class="ship-stat rating">★ 4.6</span>
+            <span class="ship-stat" data-i18n="games.card5.reviews">23.4K reviews</span>
+            <span class="ship-stat" data-i18n="games.card5.installs">1M+ installs</span>
+          </div>
+          <div class="ship-links">
+            <a class="ship-badge" href="https://play.google.com/store/apps/details?id=com.floor18.idle.cutter" target="_blank" rel="noopener">▶ Google Play</a>
+            <a class="ship-badge" href="https://apps.apple.com/us/app/idle-cutter-wood-slice/id6449081000" target="_blank" rel="noopener">🍎 App Store</a>
+          </div>
+        </article>
+
+        <article class="ship-card">
+          <div class="ship-top">
+            <img class="ship-icon" src="assets/images/games/shooting-tower.png" alt="" width="52" height="52" loading="lazy">
+            <div class="ship-head">
+              <h3>Shooting Tower</h3>
+              <span class="ship-genre" data-i18n="games.card6.genre">Tower Defense · Freeplay LLC</span>
+            </div>
+          </div>
+          <div class="ship-stats">
+            <span class="ship-stat rating">★ 4.4</span>
+            <span class="ship-stat" data-i18n="games.card6.reviews">18.4K reviews</span>
+            <span class="ship-stat" data-i18n="games.card6.installs">5M+ installs</span>
+          </div>
+          <div class="ship-links">
+            <a class="ship-badge" href="https://play.google.com/store/apps/details?id=com.floor18.merge.defense" target="_blank" rel="noopener">▶ Google Play</a>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 class="ship-subheading reveal" data-i18n="games.indie.title">Independent Projects</h3>
+      <p class="section-sub reveal" data-i18n="games.indie.sub">Solo prototypes, published separately from Freeplay.</p>
+
+      <div class="indie-grid reveal">
+
+        <div class="indie-card">
+          <img class="indie-icon" src="assets/images/games/brick-away.png" alt="" width="38" height="38" loading="lazy">
+          <div class="indie-body">
+            <h4>Brick Away: Color Escape</h4>
+            <div class="indie-meta" data-i18n="games.indie1.meta">★ 4.7 · 451 ratings · iOS</div>
+          </div>
+          <a class="indie-link" href="https://apps.apple.com/us/app/brick-away-color-escape/id6761827107" target="_blank" rel="noopener" data-i18n="games.view">View →</a>
+        </div>
+
+        <div class="indie-card">
+          <img class="indie-icon" src="assets/images/games/block-puzzle.png" alt="" width="38" height="38" loading="lazy">
+          <div class="indie-body">
+            <h4>Block Puzzle: Match &amp; Sort</h4>
+            <div class="indie-meta" data-i18n="games.indie2.meta">★ 5.0 · New · iOS</div>
+          </div>
+          <a class="indie-link" href="https://apps.apple.com/us/app/block-puzzle-match-sort/id6761048932" target="_blank" rel="noopener" data-i18n="games.view">View →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="projects">
+    <div class="wrap">
+      <h2 class="section-title reveal" data-i18n="projects.title">Open‑Source Projects</h2>
+      <p class="section-sub reveal" data-i18n="projects.sub">A selection from my GitHub — architecture, tooling and multiplayer.</p>
 
       <div class="projects-grid reveal">
 
@@ -248,25 +400,25 @@
             <h3>Top‑Down Shooter (Unity)</h3>
             <a href="https://github.com/gritsenkoandrey/top-down-shooter-unity" target="_blank" rel="noopener">↗</a>
           </div>
-          <p>A top‑down shooter built with Addressables, VContainer, UniTask, UniRx, Cinemachine, DOTween, NavMesh and URP.</p>
+          <p data-i18n="proj1.desc">A top‑down shooter built with Addressables, VContainer, UniTask, UniRx, Cinemachine, DOTween, NavMesh and URP.</p>
           <div class="tags">
             <span class="tag">VContainer</span><span class="tag">Addressables</span><span class="tag">UniTask</span>
             <span class="tag">NavMesh</span><span class="tag">URP</span>
           </div>
-          <a class="project-link" href="https://github.com/gritsenkoandrey/top-down-shooter-unity" target="_blank" rel="noopener">View on GitHub →</a>
+          <a class="project-link" href="https://github.com/gritsenkoandrey/top-down-shooter-unity" target="_blank" rel="noopener" data-i18n="proj.link">View on GitHub →</a>
         </article>
 
         <article class="project-card">
           <div class="project-head">
             <h3>Multiplayer Shooter · Unity + Colyseus</h3>
           </div>
-          <p>A real‑time multiplayer shooter split into two repos — Unity client and an authoritative Colyseus server.</p>
+          <p data-i18n="proj2.desc">A real‑time multiplayer shooter split into two repos — Unity client and an authoritative Colyseus server.</p>
           <div class="tags">
             <span class="tag">Colyseus</span><span class="tag">Client/Server</span><span class="tag">Netcode</span>
           </div>
           <div class="project-links">
-            <a class="project-link" href="https://github.com/gritsenkoandrey/multiplier-shooter-unity-colyseus-client" target="_blank" rel="noopener">Client →</a>
-            <a class="project-link" href="https://github.com/gritsenkoandrey/multiplier-shooter-unity-colyseus-server" target="_blank" rel="noopener">Server →</a>
+            <a class="project-link" href="https://github.com/gritsenkoandrey/multiplier-shooter-unity-colyseus-client" target="_blank" rel="noopener" data-i18n="proj2.client">Client →</a>
+            <a class="project-link" href="https://github.com/gritsenkoandrey/multiplier-shooter-unity-colyseus-server" target="_blank" rel="noopener" data-i18n="proj2.server">Server →</a>
           </div>
         </article>
 
@@ -275,11 +427,11 @@
             <h3>Swipe Elements (Match‑3)</h3>
             <a href="https://github.com/gritsenkoandrey/swipe-elements-unity" target="_blank" rel="noopener">↗</a>
           </div>
-          <p>A mobile match‑3 game built on an ECS + dependency‑injection architecture.</p>
+          <p data-i18n="proj3.desc">A mobile match‑3 game built on an ECS + dependency‑injection architecture.</p>
           <div class="tags">
             <span class="tag">ECS</span><span class="tag">DI</span><span class="tag">Mobile</span>
           </div>
-          <a class="project-link" href="https://github.com/gritsenkoandrey/swipe-elements-unity" target="_blank" rel="noopener">View on GitHub →</a>
+          <a class="project-link" href="https://github.com/gritsenkoandrey/swipe-elements-unity" target="_blank" rel="noopener" data-i18n="proj.link">View on GitHub →</a>
         </article>
 
         <article class="project-card">
@@ -287,11 +439,11 @@
             <h3>ChessRules</h3>
             <a href="https://github.com/gritsenkoandrey/ChessRules" target="_blank" rel="noopener">↗</a>
           </div>
-          <p>A standalone chess rules &amp; move‑validation library, decoupled from any rendering layer. MIT licensed.</p>
+          <p data-i18n="proj4.desc">A standalone chess rules &amp; move‑validation library, decoupled from any rendering layer. MIT licensed.</p>
           <div class="tags">
             <span class="tag">C#</span><span class="tag">Library</span><span class="tag">MIT</span>
           </div>
-          <a class="project-link" href="https://github.com/gritsenkoandrey/ChessRules" target="_blank" rel="noopener">View on GitHub →</a>
+          <a class="project-link" href="https://github.com/gritsenkoandrey/ChessRules" target="_blank" rel="noopener" data-i18n="proj.link">View on GitHub →</a>
         </article>
 
         <article class="project-card">
@@ -299,11 +451,11 @@
             <h3>Player Prefs Editor</h3>
             <a href="https://github.com/gritsenkoandrey/player-prefs-editor" target="_blank" rel="noopener">↗</a>
           </div>
-          <p>A UI Toolkit–based PlayerPrefs editor and viewer for the Unity Editor — a real production tool, not a demo.</p>
+          <p data-i18n="proj5.desc">A UI Toolkit–based PlayerPrefs editor and viewer for the Unity Editor — a real production tool, not a demo.</p>
           <div class="tags">
             <span class="tag">UI Toolkit</span><span class="tag">Editor Tooling</span>
           </div>
-          <a class="project-link" href="https://github.com/gritsenkoandrey/player-prefs-editor" target="_blank" rel="noopener">View on GitHub →</a>
+          <a class="project-link" href="https://github.com/gritsenkoandrey/player-prefs-editor" target="_blank" rel="noopener" data-i18n="proj.link">View on GitHub →</a>
         </article>
 
         <article class="project-card">
@@ -311,26 +463,26 @@
             <h3>Game Backend (.NET 9)</h3>
             <a href="https://github.com/gritsenkoandrey/game-backend" target="_blank" rel="noopener">↗</a>
           </div>
-          <p>A simple, reliable backend for game apps: authentication, authorization and game‑progress persistence.</p>
+          <p data-i18n="proj6.desc">A simple, reliable backend for game apps: authentication, authorization and game‑progress persistence.</p>
           <div class="tags">
             <span class="tag">.NET 9</span><span class="tag">Auth</span><span class="tag">REST API</span>
           </div>
-          <a class="project-link" href="https://github.com/gritsenkoandrey/game-backend" target="_blank" rel="noopener">View on GitHub →</a>
+          <a class="project-link" href="https://github.com/gritsenkoandrey/game-backend" target="_blank" rel="noopener" data-i18n="proj.link">View on GitHub →</a>
         </article>
 
       </div>
 
       <p class="more-projects reveal">
-        <a href="https://github.com/gritsenkoandrey?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub →</a>
+        <a href="https://github.com/gritsenkoandrey?tab=repositories" target="_blank" rel="noopener" data-i18n="projects.more">See all repositories on GitHub →</a>
       </p>
     </div>
   </section>
 
   <section class="section" id="play">
     <div class="wrap">
-      <p class="eyebrow reveal">🎮 A quick break</p>
-      <h2 class="section-title reveal">I Build Games — Here's One</h2>
-      <p class="section-sub reveal">A tiny Pong, made with plain Canvas &amp; JS, no engine, no dependencies. Move your mouse or finger over the board — first to 7 wins.</p>
+      <p class="eyebrow reveal" data-i18n="play.eyebrow">🎮 A quick break</p>
+      <h2 class="section-title reveal" data-i18n="play.title">I Build Games — Here's One</h2>
+      <p class="section-sub reveal" data-i18n="play.sub">A tiny Pong, made with plain Canvas &amp; JS, no engine, no dependencies. Move your mouse or finger over the board — first to 3 wins.</p>
 
       <div class="game-wrap reveal">
         <div class="game-hud">
@@ -340,11 +492,11 @@
         </div>
         <div class="game-canvas-wrap">
           <canvas id="pong" width="640" height="360" aria-label="Pong game — move your mouse or finger to control the left paddle"></canvas>
-          <button class="btn btn-primary game-start-btn" id="pongStart" type="button">▶ Start Game</button>
+          <button class="btn btn-primary game-start-btn" id="pongStart" type="button" data-i18n="game.start">▶ Start Game</button>
         </div>
         <div class="game-controls">
-          <p class="game-hint">Mouse / touch to move · Arrow keys also work</p>
-          <button class="btn btn-ghost" id="pongRestart" type="button">Restart</button>
+          <p class="game-hint" data-i18n="game.hint">Mouse / touch to move · Arrow keys also work</p>
+          <button class="btn btn-ghost" id="pongRestart" type="button" data-i18n="game.restart">Restart</button>
         </div>
       </div>
     </div>
@@ -352,23 +504,23 @@
 
   <section class="section section-alt" id="education">
     <div class="wrap">
-      <h2 class="section-title reveal">Education &amp; Courses</h2>
+      <h2 class="section-title reveal" data-i18n="edu.title">Education &amp; Courses</h2>
 
       <div class="edu-grid reveal">
         <div class="edu-card">
-          <h3>Education</h3>
-          <p><strong>Moscow Financial and Industrial Academy</strong><br>Bachelor's Degree, Management</p>
-          <p class="lang-note">English — B2</p>
+          <h3 data-i18n="edu.card1.title">Education</h3>
+          <p data-i18n="edu.card1.school"><strong>Moscow Financial and Industrial Academy</strong><br>Bachelor's Degree, Management</p>
+          <p class="lang-note" data-i18n="edu.card1.lang">English — B2</p>
         </div>
         <div class="edu-card">
-          <h3>Courses</h3>
+          <h3 data-i18n="edu.card2.title">Courses</h3>
           <ul class="course-list">
-            <li><span class="course-year">2025</span> Unity Game Development: ECS Approach to Gameplay</li>
-            <li><span class="course-year">2025</span> Masterclass: Addressables for Distributed Game Resources</li>
-            <li><span class="course-year">2022</span> Masterclass: Artificial Intelligence in Games</li>
-            <li><span class="course-year">2021</span> Master the Fundamentals of Game Development with Unity</li>
-            <li><span class="course-year">2021</span> Architecture Unity Games</li>
-            <li><span class="course-year">2019</span> Unity Developer Program</li>
+            <li><span class="course-year">2025</span> <span data-i18n="course1">Unity Game Development: ECS Approach to Gameplay</span></li>
+            <li><span class="course-year">2025</span> <span data-i18n="course2">Masterclass: Addressables for Distributed Game Resources</span></li>
+            <li><span class="course-year">2022</span> <span data-i18n="course3">Masterclass: Artificial Intelligence in Games</span></li>
+            <li><span class="course-year">2021</span> <span data-i18n="course4">Master the Fundamentals of Game Development with Unity</span></li>
+            <li><span class="course-year">2021</span> <span data-i18n="course5">Architecture Unity Games</span></li>
+            <li><span class="course-year">2019</span> <span data-i18n="course6">Unity Developer Program</span></li>
           </ul>
         </div>
       </div>
@@ -377,8 +529,8 @@
 
   <section class="section contact-section" id="contact">
     <div class="wrap contact-inner">
-      <h2 class="section-title reveal">Let's build something.</h2>
-      <p class="section-sub reveal">Open to Senior Unity roles and interesting collaborations.</p>
+      <h2 class="section-title reveal" data-i18n="contact.title">Let's build something.</h2>
+      <p class="section-sub reveal" data-i18n="contact.sub">Open to Senior Unity roles and interesting collaborations.</p>
       <div class="badges reveal">
         <a href="https://www.linkedin.com/in/andrey-gritsenko/" target="_blank" rel="noopener">
           <img alt="linkedin" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
@@ -397,10 +549,11 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>© <span id="year"></span> Andrey Gritsenko. Built with plain HTML/CSS/JS, hosted on GitHub Pages.</p>
+    <p><span data-i18n="footer.pre">© </span><span id="year"></span><span data-i18n="footer.post"> Andrey Gritsenko. Built with plain HTML/CSS/JS, hosted on GitHub Pages.</span></p>
   </div>
 </footer>
 
+<script src="assets/js/i18n.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/pong.js"></script>
 </body>
